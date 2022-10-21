@@ -33,7 +33,7 @@
           <a class="nav-link" href="./views/login.html">Login</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./controller/usuaraios.php">Usuarios</a>
+          <a class="nav-link" href="./controller/usuarios.php">Usuarios</a>
         </li>
     </div>
   </div>

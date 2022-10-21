@@ -1,4 +1,4 @@
-//
+
 
 <?php
 $nombreServidor = 'localhost';
@@ -18,5 +18,5 @@ if ($con -> connect_error){
     //mensaje si error
     die("Conexion fallida".$con ->connect_error);
 }
-echo "conexion establecida ";
+//echo "conexion establecida ";
 ?>

@@ -35,6 +35,36 @@
           </div>
         </div>
       </nav> 
+<?php
+ include('conector.php');
+ $query = "SELECT * FROM usuarios";
+ echo '<table class="table table-striped">
+   <tr>
+     <th scope="col">Codigo</th>
+     <th scope="col">Nombre</th>
+     <th scope="col">Correo</th>
+     <th scope="col">NickName</th>
+     <th scope="col">Clave</th>
+   </tr>';
+   
+   if($result=$con->query($query)){
+    while($row=$result->fetch_assoc()){
+      $field1name=$row["idUsuario"];
+      $field2name=$row["nombre"];
+      $field3name=$row["correo"];
+      $field4name=$row["usuario"];
+      $field5name=$row["clave"];
+
+echo'<tr>
+      <td>'.$field1name.'</td>
+      <td>'.$field2name.'</td>
+      <td>'.$field3name.'</td>
+      <td>'.$field4name.'</td>
+      <td>'.$field5name.'</td>
+    </tr>';
+    }
+  }
+?>
 
 </body>
 </html>
